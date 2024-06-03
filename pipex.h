@@ -9,6 +9,11 @@
 # include <wait.h>
 # include <stdio.h>
 
-
+void	child_p(char *argv[], int fd[], char *envp[]);
+void	parent_p(char *argv[], int fd[], char *envp[]);
+void	exec_cmd(char *arg, char *envp[]);
+int		exit_func(char *error);
+char	*pathfinder(char *envp[], char *cmd);
+char	*get_path(char *array[], char *cmd);
 
 #endif
